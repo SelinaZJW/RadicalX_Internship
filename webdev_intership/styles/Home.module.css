@@ -1,5 +1,6 @@
 .container {
   padding: 0 2rem;
+  font-family: var(--logo-font);
 }
 
 .main {
@@ -10,6 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: var(--logo-font);
 }
 
 .footer {
@@ -29,7 +31,8 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: var(--purple-4);
+  font-family: var(--medium-font);
   text-decoration: none;
 }
 
@@ -61,8 +64,9 @@
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: var(--logo-font)
+  /* font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace; */
 }
 
 .grid {

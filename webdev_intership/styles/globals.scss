@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: var(--purple-3);
+    background: var(--purple-3);
+  }
+}
+
+@font-face {
+  font-family: Passager;
+  src:url('../public/fonts/webfonts_Passager/Passager.ttf.woff') format('woff'),
+      url('../public/fonts/webfonts_Passager/Passager.ttf.svg') format('svg'),
+      url('../public/fonts/webfonts_Passager/Passager.ttf.eot'),
+      url('../public/fonts/webfonts_Passager/Passager.ttf.eot?#iefix') format('embedded-opentype'); 
+  // font-weight: normal;
+  // font-style: normal;
+}
+
+:root {
+  // color
+  --purple-4: #894DFF;
+  --purple-3: #A787FB;
+  --purple-2: #C3BEF7;
+  --purple-1: #E1DFFB;
+  --white: #FFFFFF;
+  --black: black;
+  --grey-4: #A2A3BB;
+  --grey-3: #CFCEDD;
+  --grey-2: #E5E4EE;
+  --grey-1: #F0EFF7;
+  // font
+  --logo-font: Passenger;
+  --fun-font: 'Space Mono', monospace;
+  --regular-font: 'Roboto', sans-serif;
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss"; 

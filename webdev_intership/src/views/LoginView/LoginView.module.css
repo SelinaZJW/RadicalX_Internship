@@ -1,0 +1,168 @@
+
+
+/* .row {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}  */
+.login-view {
+  height: 100%;
+}
+
+.left {
+  background-color: var(--purple-4);
+  position: absolute;
+  left: 0px;
+  width: 50%;
+  height: 100%
+}
+
+.right {
+  background-color: var(--white);
+  position: absolute;
+  right: 0px;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 100px;
+}
+
+@font-face {
+  font-family: Passager;
+  src:url('../../../public/fonts/webfonts_Passager/Passager.ttf.woff') format('woff'),
+      url('../../../public/fonts/webfonts_Passager/Passager.ttf.svg') format('svg'),
+      /* url('../../../public/fonts/webfonts_Passager/Passager.ttf.eot'),
+      url('../../../public/fonts/webfonts_Passager/Passager.ttf.eot?#iefix') format('embedded-opentype');  */
+}
+
+.title {
+  font-family: Passenger;
+  margin-bottom: 40px;
+}
+
+.form {
+  padding: 100px;
+  font-family: var(--fun-font);
+  text-align: left;
+}
+
+.form h3 {
+  font-weight: 800;
+  margin-left: 0;
+  margin-bottom: 25px;
+}
+
+#input {
+ margin-bottom: 10px;
+}
+
+
+
+.inner-addon { 
+  position: relative; 
+  margin-bottom: 15px;
+}
+
+/* style icon */
+.inner-addon .bi {
+  position: absolute;
+  padding: 0.8rem;
+  pointer-events: none;
+  color: var(--grey-4)
+}
+
+.inner-addon input {
+  background-color: var(--grey-1);
+  height: 3em;
+}
+
+/* align icon */
+.left-addon .bi  { 
+  left:  0px;
+}
+.right-addon .bi { 
+  right: 0px;
+}
+
+/* add padding  */
+.left-addon input  { 
+  padding-left:  2.5em;   
+}
+.right-addon input { 
+  padding-right:  2.5em; 
+}
+
+.utils {
+  margin-bottom: 10px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.checkbox input {
+  background-color: var(--purple-4);
+}
+
+.utils a {
+  color:  var(--purple-4);
+  text-decoration: none;
+}
+
+.utils a:hover {
+  text-decoration:underline;
+}
+
+.button {
+  height: 50px;
+  padding: 3px;
+  background-color: var(--purple-4);
+  color: white;
+  border-style: none;
+  border-radius: 10px;
+  width: 100%
+}
+
+.button:hover {
+  background-color: white;
+  color: var(--purple-4);
+  border: 2px solid var(--purple-4);
+}
+
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
