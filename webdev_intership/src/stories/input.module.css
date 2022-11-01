@@ -1,0 +1,82 @@
+.storybook-input {
+  font-family: var(--fun-font);
+  font-weight: 700;
+  border: 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  width: 100%;
+  background-color: transparent;
+}
+/* .storybook-input--left {
+  color: white;
+  background-color: var(--purple-4);
+}
+.storybook-input--left:hover {
+  background-color: white;
+  color: var(--purple-4);
+  border: 2px solid var(--purple-4);
+}
+.storybook-input--right {
+  color: var(--purple-4);
+  background-color: transparent;
+  border: 1px var(--purple-4);
+  border-style: dashed;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset; */
+/* }
+.storybook-input--right:hover {
+  background-color: var(--purple-1);
+}
+.storybook-input--disabled {
+  background-color: var(--grey-2);
+  color: var(--grey-5);
+  cursor: not-allowed;
+}  */
+.storybook-input--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.storybook-input--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.storybook-input--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+.inner-addon { 
+  position: relative; 
+  /* margin-bottom: 15px; */
+  font-family: var(--fun-font);
+}
+
+/* style icon */
+.inner-addon .bi {
+  position: absolute;
+  padding: 0.8rem;
+  pointer-events: none;
+  color: var(--grey-4)
+}
+
+.inner-addon input {
+  background-color: var(--grey-1);
+  height: 3em;
+}
+
+/* align icon */
+.left .bi  { 
+  left:  0px;
+}
+.right .bi { 
+  right: 0px;
+}
+
+/* add padding  */
+.left .input { 
+  padding-left:  2.5em;   
+}
+.right .input { 
+  padding-right:  2.5em; 
+}

@@ -34,27 +34,28 @@ a {
       url('../public/fonts/webfonts_Passager/Passager.ttf.svg') format('svg'),
       url('../public/fonts/webfonts_Passager/Passager.ttf.eot'),
       url('../public/fonts/webfonts_Passager/Passager.ttf.eot?#iefix') format('embedded-opentype'); 
-  // font-weight: normal;
-  // font-style: normal;
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
-  // color
+  /* color */
   --purple-4: #894DFF;
   --purple-3: #A787FB;
   --purple-2: #C3BEF7;
   --purple-1: #E1DFFB;
   --white: #FFFFFF;
   --black: black;
+  --grey-5: #7e7e85;
   --grey-4: #A2A3BB;
   --grey-3: #CFCEDD;
   --grey-2: #E5E4EE;
   --grey-1: #F0EFF7;
-  // font
+  /* font */
   --logo-font: Passenger;
   --fun-font: 'Space Mono', monospace;
   --regular-font: 'Roboto', sans-serif;
 }
 
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss"; 
+/* @import "../node_modules/bootstrap/scss/bootstrap.scss";  */

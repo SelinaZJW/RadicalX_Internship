@@ -6,18 +6,36 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "bootstrap": "^5.2.2",
     "bootstrap-icons": "^1.9.1",
-    "next": "13.0.0",
+    "next": "13.0.1",
     "react": "18.2.0",
+    "react-css-modules": "^4.7.11",
     "react-dom": "18.2.0",
     "sass": "^1.55.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@mdx-js/react": "^1.6.22",
+    "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-interactions": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/builder-webpack5": "^6.5.13",
+    "@storybook/manager-webpack5": "^6.5.13",
+    "@storybook/react": "^6.5.13",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^9.0.1",
+    "css-loader": "^6.7.1",
     "eslint": "8.26.0",
-    "eslint-config-next": "13.0.0"
+    "eslint-config-next": "13.0.1",
+    "eslint-plugin-storybook": "^0.6.7",
+    "sass-loader": "^13.1.0",
+    "style-loader": "^3.3.1"
   }
 }
