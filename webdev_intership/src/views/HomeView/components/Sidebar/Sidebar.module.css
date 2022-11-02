@@ -1,0 +1,27 @@
+.main {
+  height: 100%;
+  padding: 1em;
+}
+
+.sidebar {
+  height: 100%;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: white;
+  width: 250px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.siderbar {
+  margin-right: 1em;
+}
+
+.user {
+  margin-left: 1em;
+  font-family: var(--fun-font);
+}

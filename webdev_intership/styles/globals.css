@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html,
-body {
+body,
+body > div:first-child, div#__next, div#__next > div {
+  height: 100%;   
+  /* make all pages full height */
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -23,6 +26,7 @@ a {
     color-scheme: dark;
   }
   body {
+    height: 100%;
     color: var(--purple-3);
     background: var(--purple-3);
   }

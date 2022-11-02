@@ -1,7 +1,7 @@
+import HomeView from "../../src/views/HomeView/HomeView"
+
 export default function Main() {
   return (
-    <div>
-      <p>Hello there!</p>
-    </div>
+    <HomeView />
   )
 }
