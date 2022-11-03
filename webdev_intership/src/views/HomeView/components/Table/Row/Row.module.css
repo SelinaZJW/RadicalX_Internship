@@ -1,0 +1,60 @@
+#row {
+  padding: 2.5em 1em;
+}
+
+#first h6 {
+  font-family: var(--fun-font);
+}
+
+#second {
+  display: flex;
+  align-items: center;
+}
+
+.second {
+  /* margin-top: auto;
+  margin-bottom: auto;
+  height: auto; */
+  display:block
+}
+
+#second h6 {
+  font-family: var(--fun-font);
+}
+
+#second p {
+  color: var(--grey-4)
+}
+
+#third p {
+  color: var(--purple-4);
+  background-color: var(--grey-1);
+  width:fit-content;
+  padding: 0.5em;
+  font-size: large;
+  border-radius: 0.5em;
+  font-family: var(--fun-font);
+  font-weight: bold;
+}
+
+#third {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#row img {
+  width: 90%
+}
+
+#fifth {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#fifth i {
+  font-size: 30px;
+  color: var(--purple-4)
+}
+

@@ -1,0 +1,49 @@
+.insights {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.left {
+  width: 25%;
+  background-color: var(--grey-1);
+  padding: 1em;
+  padding-right: 2em;
+  border-radius: 1em;
+  margin-right: 1em;
+}
+
+.left h5 {
+  margin-bottom: 1em;
+}
+
+.left p {
+  font-family: var(--fun-font);
+  font-size: 7px;
+}
+
+.right {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--grey-1);
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+
+#button {
+  width: auto !important;
+}
+
+.graph img {
+  width: 100%
+}

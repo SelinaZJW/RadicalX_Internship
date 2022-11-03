@@ -1,5 +1,8 @@
 import React from 'react';
 import Sidebar from './components/Sidebar/Sidebar';
+import Header from './components/Header/Header';
+import Insights from './components/Insights/Insights';
+import Table from './components/Table/Table';
 import styles from "./HomeView.module.css";
 
 const HomeView = () => {
@@ -10,13 +13,13 @@ const HomeView = () => {
       </section>
       <section className={styles.content}>
         <section className={styles.header}>
-          we
+          <Header />
         </section>
         <section className={styles.insights}>
-          erwe
+          <Insights />
         </section>
         <section className={styles.table}>
-          wer
+          <Table />
         </section>
       </section>
     </main>

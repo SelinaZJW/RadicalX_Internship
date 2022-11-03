@@ -28,6 +28,10 @@
 .storybook-button--secondary:hover {
   background-color: var(--purple-1);
 }
+.storybook-button--basic {
+  color:var(--purple-4);
+  background-color: white;
+}
 .storybook-button--disabled {
   background-color: var(--grey-2);
   color: var(--grey-5);

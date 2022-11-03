@@ -42,6 +42,11 @@
   margin-bottom: 40px;
 }
 
+.logo {
+  width: 220px;
+  margin-bottom: 40px;
+}
+
 .form {
   padding: 100px;
   font-family: var(--fun-font);

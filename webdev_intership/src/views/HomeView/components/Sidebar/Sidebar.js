@@ -12,14 +12,15 @@ const Sidebar = () => {
           <svg className="bi pe-none me-2" width="40" height="32"><use xlinkHref="#bootstrap"/></svg>
           <span className="fs-4">Sidebar</span>
         </a> */}
-        <h1 className={styles.title}>Radical X</h1>
+        {/* <h1 className={styles.title}>Radical X</h1> */}
+        <img src="/images/logo.png" alt="logo" className={styles.logo} />
         {/* <hr> */}
         <ul className="nav nav-pills flex-column mb-auto">
           <li>
             <SidebarLink label="Dashboard" icon="bi bi-columns-gap" href="Home/"  />
           </li>
           <li>
-            <SidebarLink label="Apprenticeship" icon="bi bi-award" href="Home/" />
+            <SidebarLink label="Apprenticeships" icon="bi bi-award" href="Home/" />
           </li>
           <li>
             <SidebarLink label="Internships" icon="bi bi-book-half" href="Home/" active />

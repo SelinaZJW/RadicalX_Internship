@@ -8,7 +8,15 @@
   padding: 1em;
   border-radius: 1em;
   background-color: white;
-  width: 250px;
+  width: 220px;
+}
+
+.logo {
+  margin: 20px auto;
+  margin-bottom: 40px;
+  /* margin-top: 20px; */
+  width: 170px;
+  /* margin-left: 1em; */
 }
 
 .title {
@@ -22,6 +30,6 @@
 }
 
 .user {
-  margin-left: 1em;
+  margin: 0 auto;
   font-family: var(--fun-font);
 }

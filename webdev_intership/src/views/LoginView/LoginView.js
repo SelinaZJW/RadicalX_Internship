@@ -9,7 +9,8 @@ const LoginView = () => {
       <section className={styles.left}>
       </section>
       <section className={styles.right}>
-        <h1 className={styles["title"]}>Radical X</h1>
+        {/* <h1 className={styles["title"]}>Radical X</h1> */}
+        <img src="/images/logo.png" alt="logo" className={styles.logo} />
         <form className={styles.form}>
           <h3> Login</h3>
           <Input type="email" variant="left" placeholder='Email Address' icon="bi bi-envelope" styling={{ marginBottom: "10px"}} />

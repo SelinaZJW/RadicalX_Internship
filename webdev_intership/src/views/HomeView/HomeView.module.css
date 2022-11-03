@@ -1,15 +1,35 @@
 .home-view {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
+  /* height: 100%; */
+  /* display: flex;
+  flex-direction: row; */
+  /* position: relative; */
+  min-height: 100%;
   background-color: var(--grey-2);
 }
 
 .sidebar {
   height: 100%;
+  position: fixed;
 }
 
 .content {
+  width: cal(100%-220px);
+  height: 100%;
   display: flex;
   flex-direction: column;
+  padding: 2.5em;
+  margin-left: 250px;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.insights {
+  margin-bottom: 1em;
+}
+
+.table {
+  width: 100%
 }

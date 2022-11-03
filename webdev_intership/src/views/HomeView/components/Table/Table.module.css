@@ -1,0 +1,29 @@
+#table {
+  background-color: white;
+  font-size: 5px;
+  margin-right: 0;
+  margin-left: 0;
+  max-width: 100%;
+  border-radius: 4em;
+  border-collapse: collapse;
+}
+
+#top-row {
+  background-color: var(--grey-1) ;
+  font-family: var(--fun-font);
+  padding: 3em 1em;
+  font-weight: 900;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+}
+
+#top-row i {
+  color: var(--purple-4);
+  font-size: 10px;
+}
+
+#top-row div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
