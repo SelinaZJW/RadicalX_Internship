@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import internshipService from "../../../../services/internshipService";
 import Row from "./Row/Row";
 import styles from "./Table.module.css";
 
 const Table = () => {
+  const [internships_db, setInternships] = useState([]);
+  useEffect(() => {
+    async function fetchData() {
+      const data = await internshipService.getAllInternships();
+      setInternships(data);
+    }
+    // internshipService.getAllInternships().then(setInternships)
+
+    fetchData()
+  }, []);
+  console.log(internships_db)
+
   const internships = [
     {
       id:0,
@@ -52,26 +65,26 @@ const Table = () => {
   ]
 
   return (
-    <div class="container" id={styles.table}>
-      <div class="row" id={styles["top-row"]}>
-        <div class="col-3">
-          Internship Title <i class="bi bi-arrow-down-square"></i>
+    <div className="container" id={styles.table}>
+      <div className="row" id={styles["top-row"]}>
+        <div className="col-3">
+          Internship Title <i className="bi bi-arrow-down-square"></i>
         </div>
-        <div class="col">
-          Completion Period <i class="bi bi-arrow-down-square"></i>
+        <div className="col">
+          Completion Period <i className="bi bi-arrow-down-square"></i>
         </div>
-        <div class="col">
-          Total Enrolled <i class="bi bi-arrow-down-square"></i>
+        <div className="col">
+          Total Enrolled <i className="bi bi-arrow-down-square"></i>
         </div>
-        <div class="col-3">
-          Qualified Candidates <i class="bi bi-arrow-down-square"></i>
+        <div className="col-3">
+          Qualified Candidates <i className="bi bi-arrow-down-square"></i>
         </div>
-        <div class="col">
+        <div className="col">
           
         </div>
       </div>
       {/* <Row /> */}
-      {internships.map(i => 
+      {internships_db.map(i => 
         <Row  
           key={i.id} 
           title={i.title} 

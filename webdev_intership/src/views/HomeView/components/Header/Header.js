@@ -8,7 +8,7 @@ const Header = () => {
       <h3>
         Internships
       </h3>
-      <Button variant="primary" size="medium" id={styles.button}> <i class="bi bi-plus-square"></i> Create New Internship</Button>
+      <Button variant="primary" size="medium" id={styles.button}> <i className="bi bi-plus-square"></i> Create New Internship</Button>
 
     </section>
   )

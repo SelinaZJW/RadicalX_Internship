@@ -14,10 +14,10 @@ const Insights = () => {
       <section className={styles.right}>
         <section className={styles.bar} >
           <div>
-          <Button variant="primary" size="small" id={styles.button} styling={{marginRight: "1em"}}> this week </Button>
+          <Button variant="basic" size="small" id={styles["button--active"]} styling={{marginRight: "1em"}}> this week </Button>
           <Button variant="basic" size="small" id={styles.button}> this month </Button>
           </div>
-          <Button variant="basic" size="small"id={styles.button} > <i class="bi bi-calendar2-week"></i> select dates </Button>
+          <Button variant="basic" size="small"id={styles.button} > <i className="bi bi-calendar2-week"></i> select dates </Button>
         </section>
         <section className={styles.graph}>
           <img src="/images/graph.png" alt="graph"  />

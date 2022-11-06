@@ -44,6 +44,12 @@
   width: auto !important;
 }
 
+#button--active {
+  width: auto !important;
+  color: white;
+  background-color: var(--purple-4);
+}
+
 .graph img {
   width: 100%
 }
