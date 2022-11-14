@@ -1,9 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Link from 'next/link';
 import { Button } from '../../stories/Button';
 import { Input } from '../../stories/Input';
 import styles from "./LoginView.module.css"
 
 const LoginView = () => {
+  const [email, setEmail] = useState("");   //controlled value -> initiate
+  const [password, setPassword] = useState("");
+
+  const HandleLogin = (event) => {
+    event.preventDefault();
+
+    // setEmail(event.target.email.value);
+    // setPassword(event.target.password.value);
+    console.log(email, password);
+    setEmail("")
+    setPassword("")
+  }
+
   return (
     <main className={styles["login-view"]}>
       <section className={styles.left}>
@@ -13,8 +27,8 @@ const LoginView = () => {
         <img src="/images/logo.png" alt="logo" className={styles.logo} />
         <form className={styles.form}>
           <h3> Login</h3>
-          <Input type="email" variant="left" placeholder='Email Address' icon="bi bi-envelope" styling={{ marginBottom: "10px"}} />
-          <Input type="password" variant="left" placeholder='Password' icon="bi bi-key" styling={{ marginBottom: "10px"}}  />
+          <Input type="email" variant="left" placeholder='Email Address' icon="bi bi-envelope" styling={{ marginBottom: "10px"}} onChange={(e) => setEmail(e.target.value)} value={email} />
+          <Input type="password" variant="left" placeholder='Password' icon="bi bi-key" styling={{ marginBottom: "10px"}} onChange={(e) => setPassword(e.target.value)} value={password}  />
           {/* <div className={`${styles["inner-addon"]} ${styles["left-addon"]}`}>
             <i className={`bi bi-envelope ${styles["bi"]}`}></i>
             <input type="email" className="form-control" placeholder='Email Address'/>
@@ -30,11 +44,16 @@ const LoginView = () => {
               <span className={styles.cr}><i className={`${styles["cr-icon"]} bi bi-check-lg`}></i></span>
               Remember me
             </label>
-            <a href="">
+            <Link href="">
               Forgot password
-            </a>
+            </Link>
           </div>
-          <Button variant="primary" size="large">Login</Button>
+          <Button variant="primary" size="large" onClick={HandleLogin} >Login</Button>
+          <div className={styles.signup}>
+            <Link href="/Signup" className={styles["signup-link"]}>
+              New User? Sign up
+            </Link>
+          </div>
           {/* <button className={styles.button} type="submit">Login</button> */}
         </form>
       </section>

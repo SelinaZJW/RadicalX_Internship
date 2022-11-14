@@ -6,7 +6,7 @@ import styles from './input.module.css';
 /**
  * Primary UI component for user interaction
  */
-export const Input = ({ type, variant, children, placeholder, icon, styling, ...props }) => {
+export const Input = ({ type, name, variant, children, placeholder, icon, styling, onChange, value, ...props }) => {
 
   return (
     // <input
@@ -20,7 +20,7 @@ export const Input = ({ type, variant, children, placeholder, icon, styling, ...
     // </input>
     <div className={`${styles["inner-addon"]} ${styles[`${variant}`]}`} style={styling}>
       <i className={`${icon} ${styles["bi"]}`}></i>
-      <input type={type} className={`form-control ${styles["input"]}`} placeholder={placeholder} />
+      <input type={type} className={`form-control ${styles["input"]}`} placeholder={placeholder} name={name} onChange={onChange} value={value}/>
     </div>
   );
 };
@@ -31,9 +31,12 @@ Input.propTypes = {
    */
   // primary: PropTypes.bool,
   type: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  value: PropTypes.string,
   variant: PropTypes.oneOf(["left", "right"]),
   placeholder: PropTypes.string,
   icon: PropTypes.string,
+  onChange: PropTypes.func
   /**
    * What background color to use
    */
