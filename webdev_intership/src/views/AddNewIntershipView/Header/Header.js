@@ -12,7 +12,7 @@ const Header = () => {
         Add New Internship
       </h3>
       <section className={styles.button}>
-        <Button variant="disabled" size="medium" id={styles.button2} >Continue to Next Step <i class="bi bi-arrow-right"></i></Button>
+        <Button variant="disabled" size="medium" id={styles.button2} >Continue to Next Step <i className="bi bi-arrow-right"></i></Button>
       </section>
     </section>
   )

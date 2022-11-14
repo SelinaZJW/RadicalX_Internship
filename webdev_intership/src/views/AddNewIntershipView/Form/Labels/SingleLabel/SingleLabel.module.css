@@ -1,0 +1,54 @@
+.label {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.icon {
+  text-align: center;
+  padding: 0.5em 1em 0.5em 0;
+}
+
+.icon i {
+  font-size: 20px;
+}
+
+.icon--add i {
+  color: transparent;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid var(--grey-3);
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-radius: 0.7em;
+}
+
+.button--active {
+  border: 1px solid var(--purple-4);
+  /* box-shadow: 5px 5px rgba(118, 113, 113, 0.1); */
+  box-shadow: 5px 5px 5px  rgba(122, 116, 96, 0.4);
+}
+
+.button p {
+  margin: 0;
+  font-family: var(--fun-font);
+  font-size: 13px;
+}
+
+.button i {
+  color: var(--grey-4);
+}
+
+.button--active i {
+  color: var(--purple-4);
+}
+
+.button--finished p i {
+  color: var(--purple-4);
+}
