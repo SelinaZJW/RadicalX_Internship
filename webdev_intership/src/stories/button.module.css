@@ -32,10 +32,10 @@
   color:var(--purple-4);
   background-color: white;
 }
-.storybook-button--basic:hover {
+/* .storybook-button--basic:hover {
   color:white;
   background-color:var(--purple-4);
-}
+} */
 .storybook-button--disabled {
   background-color: var(--grey-2);
   color: var(--grey-5);

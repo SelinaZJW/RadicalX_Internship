@@ -1,7 +1,10 @@
-import SignupView from "../../src/views/SignupView/SignupView"
+import SignupView from "../../src/views/SignupView/SignupView";
+import AuthProvider from "../../src/firebase/AuthContext";
 
 export default function Login () {
   return (
-    <SignupView />
+    <AuthProvider>
+       <SignupView />
+    </AuthProvider>
   )
 }

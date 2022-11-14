@@ -1,0 +1,13 @@
+.progress-bar {
+  font-family: var(--fun-font);
+  font-size: small;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin: 15px;
+  margin-top: 0;
+  border: 1px solid var(--grey-3);
+  border-radius: 1em;
+  padding: 1em;
+}

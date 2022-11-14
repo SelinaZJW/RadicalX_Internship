@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
+import { useAuth } from '../../firebase/AuthContext';
 import { Button } from '../../stories/Button';
 import { Input } from '../../stories/Input';
 import styles from "./LoginView.module.css"
@@ -7,15 +8,19 @@ import styles from "./LoginView.module.css"
 const LoginView = () => {
   const [email, setEmail] = useState("");   //controlled value -> initiate
   const [password, setPassword] = useState("");
+  const { login } = useAuth();
 
-  const HandleLogin = (event) => {
+  const HandleLogin = async (event) => {
     event.preventDefault();
 
-    // setEmail(event.target.email.value);
-    // setPassword(event.target.password.value);
-    console.log(email, password);
-    setEmail("")
-    setPassword("")
+    try {
+      await login(email, password)    //await to catch error
+      console.log(email, password);
+      setEmail("")
+      setPassword("")
+    } catch {
+      console.log("log in failed")
+    }
   }
 
   return (

@@ -1,0 +1,14 @@
+.progress-active {
+  color: black;
+  margin: 0;
+}
+
+.progress-disabled {
+  color: var(--grey-4);
+  margin: 0;
+}
+
+.progress-finished {
+  color: var(--purple-4);
+  margin: 0;
+}
